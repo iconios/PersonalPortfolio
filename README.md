@@ -1,0 +1,1 @@
+This project focuses on creating a personal porflio website using HTML, SCSS, JAVASCRIPT for front-end and Wordpress for backend. The same front end will be used to create a node.js project using express.js as web framework and mongoDB for persistent storage.

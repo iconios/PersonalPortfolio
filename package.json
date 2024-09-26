@@ -1,0 +1,14 @@
+{
+  "name": "personal-portfolio-website",
+  "version": "1.0.0",
+  "description": "Personal portfolio website to document all development projects undertaken",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ademuyiwa Ikotun",
+  "license": "ISC",
+  "dependencies": {
+    "git": "^0.1.5"
+  }
+}
