@@ -1,0 +1,352 @@
+/* Extra small devices (phones, 320px and down) */
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: #FFFFFF;
+    margin: 0;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+  }
+  body header {
+    background-color: #FFFFFF;
+    height: 100px;
+    width: 100%;
+    margin: 0;
+  }
+  body header img {
+    width: 50%;
+    position: absolute;
+    left: 10px;
+    margin: 13px auto;
+  }
+  body header nav {
+    display: none;
+  }
+  body header .hamburgerMenuContainer {
+    width: 15vw;
+    position: absolute;
+    right: 10vw;
+    top: 25px;
+  }
+  body header .hamburgerMenuContainer div {
+    height: 6px;
+    background-color: #F25C05;
+    margin-top: 8px;
+  }
+  body main #mask {
+    background-color: #FFFFFF;
+    opacity: 0.7;
+    width: 100%;
+    position: absolute;
+    top: 85px;
+    height: 100%;
+    z-index: 2;
+  }
+  body main .home-section {
+    background-color: #F2AE2E;
+    padding-bottom: 8vh;
+    text-align: center;
+  }
+  body main .home-section .section-1 {
+    padding-top: 72px;
+  }
+  body main .home-section .section-1 img {
+    width: calc(100% - 15px);
+  }
+  body main .home-section .section-1 .socialMedia-links {
+    margin: auto;
+    width: 60%;
+    padding-top: 12px;
+  }
+  body main .home-section .section-1 .socialMedia-links img {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    padding-left: 15px;
+  }
+  body main .home-section .section-2 {
+    width: 100%;
+    text-align: center;
+  }
+  body main .home-section .section-2 #name {
+    font-weight: 900;
+    font-size: 64px;
+    margin: 16px 0 0 0;
+    line-height: 67px;
+  }
+  body main .home-section .section-2 #desc {
+    font-weight: medium;
+    font-size: 16px;
+  }
+  body main .home-section .section-2 button {
+    background-color: #F25C05;
+    padding: 10px 25px;
+    border-radius: 20px;
+    border-color: #F25C05;
+    border-style: solid;
+    width: 80%;
+    color: #FFFFFF;
+    font-size: 18px;
+    margin-top: 15px;
+  }
+  body main #dropDownItems-container {
+    position: absolute;
+    top: 85px;
+    z-index: 3;
+    width: 100%;
+  }
+  body main #dropDownItems-container ul {
+    padding-left: 0;
+  }
+  body main #dropDownItems-container ul .dropDownItem {
+    list-style: none;
+    text-align: center;
+    padding: 5px 0;
+    border-top-color: #0D0D0D;
+    border-top-width: 1px;
+    border-top-style: solid;
+    background-color: #FFFFFF;
+  }
+  body main #dropDownItems-container ul .dropDownItem a {
+    text-decoration: none;
+    color: #0D0D0D;
+  }
+  body main #dropDownItems-container ul li button {
+    background-color: #F25C05;
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 0;
+    border: none;
+    color: #FFFFFF;
+  }
+  body main .clients-section {
+    width: 100%;
+    height: 241px;
+    border-color: #0D0D0D;
+    border-width: 1px;
+    border-style: solid;
+  }
+  body main .clients-section p {
+    padding-top: 15px;
+    margin-bottom: 0;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 20px;
+  }
+  body main .clients-section #slider-container {
+    height: 100px;
+    width: 80px;
+    position: relative;
+    top: 0;
+  }
+  body main .clients-section #slider-container img {
+    height: 100px;
+    width: 80px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    position: relative;
+    top: 0;
+  }
+  body main .clients-section #slider-container.active {
+    opacity: 1;
+  }
+  body main .services-list-section {
+    width: 100%;
+    background-color: #FFFFFF;
+  }
+  body main .services-list-section p {
+    text-align: center;
+    padding: 35px 10px;
+  }
+  body main .services-list-section p span {
+    color: #F25C05;
+  }
+  body main .services-list-section .services-list {
+    background-color: #F2AE2E;
+    padding: 5px 15px 15px 15px;
+    text-align: center;
+  }
+  body main .services-list-section .services-list .selected {
+    border-width: 7px;
+    border-style: solid;
+    -o-border-image: conic-gradient(from 0deg, #FFFFFF, #662E0E, #67E9EB, #F25C05) 1;
+       border-image: conic-gradient(from 0deg, #FFFFFF, #662E0E, #67E9EB, #F25C05) 1;
+  }
+  body main .services-list-section .services-list .service {
+    background-color: #FFFFFF;
+    margin-top: 20px;
+    border-radius: 20px;
+  }
+  body main .services-list-section .services-list .service .head {
+    margin: 0;
+    padding: 15px 0 0 15px;
+    font-weight: 600;
+    color: #0D0D0D;
+    text-align: left;
+    font-size: 18px;
+  }
+  body main .services-list-section .services-list .service .body {
+    padding: 0 5px 30px 10px;
+    margin: 0;
+    font-size: 15px;
+  }
+  body main .services-list-section .services-list .service .body img {
+    float: left;
+    margin: 0;
+    width: 50px;
+  }
+  body main .services-list-section .services-list button {
+    margin: 40px 0 30px 0;
+    background-color: #FFFFFF;
+    padding: 10px 25px;
+    border-radius: 20px;
+    border-color: #F25C05;
+    border-style: solid;
+    width: 80%;
+    color: #0D0D0D;
+    font-size: 18px;
+  }
+  body main .service-summary-section {
+    background-color: #FFFFFF;
+    padding: 30px 10px;
+    margin: 0;
+    color: #0D0D0D;
+    text-align: center;
+  }
+  body main .service-summary-section h1 {
+    font-weight: 900;
+    padding-bottom: 5px;
+  }
+  body main .service-summary-section h1 span {
+    color: #F25C05;
+  }
+  body main .service-summary-section #service-body {
+    font-size: 15px;
+    font-weight: normal;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+  body main .service-summary-section button {
+    background-color: #F25C05;
+    padding: 10px 25px;
+    border-radius: 20px;
+    border-color: #F25C05;
+    border-style: solid;
+    width: 80%;
+    color: #FFFFFF;
+    font-size: 18px;
+  }
+  body main .testimonials-section {
+    padding: 40px 10px;
+    color: #0D0D0D;
+    text-align: center;
+  }
+  body main .testimonials-section h1 {
+    font-weight: 900;
+  }
+  body main .testimonials-section h1 span {
+    color: #F25C05;
+  }
+  body main .testimonials-section #testimonial-desc {
+    font-size: 15px;
+    padding-bottom: 10px;
+    text-align: left;
+  }
+  body main .testimonials-section img {
+    width: calc(100% - 10px);
+    border-radius: 20px;
+    position: relative;
+    top: 0;
+    z-index: 1;
+  }
+  body main .testimonials-section #quote-background {
+    background-image: linear-gradient(to right, #FFFFFF, #F25C05);
+    padding: 30px 10px 10px 10px;
+    text-align: left;
+  }
+  body main .testimonials-section #quote-background p {
+    font-size: 20px;
+    font-weight: bolder;
+  }
+  body main .testimonials-section #quote-background p q {
+    font-weight: normal;
+  }
+  body main .projects-section {
+    padding: 40px 10px;
+    color: #0D0D0D;
+    text-align: center;
+  }
+  body main .projects-section h1 {
+    font-weight: 900;
+    padding-bottom: 40px;
+  }
+  body main .projects-section h1 span {
+    color: #F25C05;
+  }
+  body main .projects-section img {
+    width: calc(100% - 10px);
+    border-radius: 20px;
+  }
+  body main .projects-section h3 {
+    font-weight: 600;
+  }
+  body main .projects-section #project-desc {
+    font-size: 15px;
+  }
+  body main .projects-section #project-skills {
+    color: #F25C05;
+    font-size: 16px;
+    padding-bottom: 25px;
+    font-weight: 500;
+  }
+  body main .projects-section button {
+    background-color: #FFFFFF;
+    padding: 10px 25px;
+    border-radius: 20px;
+    border-color: #F25C05;
+    border-style: solid;
+    width: 80%;
+    color: #0D0D0D;
+    font-size: 18px;
+  }
+  body main .News-section {
+    padding: 35px 10px;
+    text-align: center;
+  }
+  body main .News-section h1 {
+    font-weight: 900;
+    padding: 20px;
+  }
+  body main .News-section h1 span {
+    color: #F25C05;
+  }
+  body main .News-section img {
+    width: calc(100% - 10px);
+    padding-bottom: 10px;
+    border-radius: 20px;
+  }
+  body main .News-section #news-source, body main .News-section #news-date {
+    font-size: 12px;
+    text-align: left;
+    margin-bottom: 3px;
+  }
+  body main .News-section #news-head {
+    font-weight: 700;
+    text-align: left;
+  }
+  body main .News-section #news-desc {
+    font-size: 15px;
+    font-weight: normal;
+    padding-bottom: 15px;
+    text-align: left;
+  }
+  body main .News-section a button {
+    background-color: #FFFFFF;
+    padding: 10px 25px;
+    border-radius: 20px;
+    border-color: #F25C05;
+    border-style: solid;
+    width: 80%;
+    color: #0D0D0D;
+    font-size: 18px;
+  }
+}/*# sourceMappingURL=styles.css.map */
