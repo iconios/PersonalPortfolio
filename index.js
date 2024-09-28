@@ -38,11 +38,11 @@ function googleTranslateElementInit() {
 
 function slide() {
     // Get the elements
-    const slideContainer = document.getElementsByClassName('slider-container');
-    const slides = slideContainer.children;
+    let slideContainer = document.getElementsByClassName('slider-container');
+    let slides = slideContainer.children;
 
     // Store the total number of images
-    const slideCount = slides.length;
+    let slideCount = slides.length;
     let activeSlide = 0;
 
     // To change the images dynamically every 5secs
