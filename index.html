@@ -11,9 +11,9 @@
     <script type="text/javascript" src="./index.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </head>
-<body onload="slide()">
-    <header>
-       <img src="./images/Nerdy_Logo.png" alt="Nerdy Logo">
+<body>
+    <header class="row col-s-11">
+       <img class="col-s-3" src="./images/Nerdy_Logo.png" alt="Company name is Nerdy">
        <nav>
             <a href="#">Home</a>
             <a href="#">About</a>
@@ -23,31 +23,32 @@
             <a href="#">News</a>
             <button type="button">Contact Me</button>
        </nav> 
-       <div class="hamburgerMenuContainer" onclick="hamburgermenu()" tabindex="">
+       <div aria-label="Hamburger Menu Bar" role="button" class="hamburgerMenuContainer" onclick="hamburgermenu()" tabindex="">
             <div id="bar1"></div>
             <div id="bar2"></div>
             <div id="bar3"></div>
        </div>
     </header>
+
     <main>
-        <div id="mask" style="display: none;"></div>
-        <div class="home-section">
-            <div class="section-1">
-                <img src="./images/Nerdy_imaage.png" alt="Nerdy" >
-                <div class="socialMedia-links">
-                    <a href="#"><img src="./icons/icons8-facebook-48.png" alt="Facebook icon" ></a> 
-                    <a href="#"><img src="./icons/icons8-x-50.png" alt="X icon" ></a>
-                    <a href="#"><img src="./icons/icons8-linkedin-48.png" alt="Linkedin icon" ></a>
-                    <a href="#"><img src="./icons/icons8-instagram-48.png" alt="Instagram icon" ></a>
+        <section id="mask" style="display: none;"></section>
+        <div class="home-section" aria-label="section">
+            <div aria-label="section" class="section-1">
+                <img src="./images/Nerdy_imaage.png" alt="An AI-generated realistic image of Nerdy" >
+                <div aria-label="list" class="socialMedia-links">
+                    <a href="#"><img src="./icons/icons8-facebook-48.png" alt="View me on facebook" ></a> 
+                    <a href="#"><img src="./icons/icons8-x-50.png" alt="View me on X" ></a>
+                    <a href="#"><img src="./icons/icons8-linkedin-48.png" alt="View me on Linkedin" ></a>
+                    <a href="#"><img src="./icons/icons8-instagram-48.png" alt="View me on Instagram" ></a>
                 </div>
             </div>
-            <div class="section-2">
+            <div aria-label="section" class="section-2">
                 <p id="name">Hi, I am Muyiwa</p>
                 <p id="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et </p>
                 <button type="button">Hire Me</button>
             </div>            
         </div>
-        <div id="dropDownItems-container" style="display: none;">
+        <div class="row col-s-11" aria-label="dropdown items container" id="dropDownItems-container" style="display: none;">
             <ul>
                 <li class="dropDownItem"><a href="#">Home</a></li>
                 <li class="dropDownItem"><a href="#">About</a></li>
@@ -58,38 +59,44 @@
                 <li><button type="button">Contact Me</button></li>
             </ul>
         </div>
-        <div class="clients-section">
+        <div aria-label="section" class="clients-section" onload="slide()">
             <p>Worked with All These Brands & Clients</p>
-            <div id="slider-container">
-                <img src="./images/21st_century_logo.png" alt="21ctl" >
-                <img src="./images/Celiver_Logo.png" alt="celiver" >
-                <img src="./images/e-motion_adverts_logo.png" alt="E-motion">
-                <img src="./images/pwv_holdings_logo.png" alt="Pwv Holdings" >
-                <img src="./images/ridersnest_logo.png" alt="Ridersnest">
+            <div aria-label="slides container" id="slider-container">
+                <img src="./images/21st_century_logo.png" alt="Once worked with 21ctl" >
+                <img src="./images/Celiver_Logo.png" alt="Currently working with celiver" >
+                <img src="./images/e-motion_adverts_logo.png" alt="Once worked with E-motion">
+                <img src="./images/pwv_holdings_logo.png" alt="Once worked with Pwv Holdings" >
+                <img src="./images/ridersnest_logo.png" alt="Currently works with Ridersnest">
             </div>
         </div>
-        <div class="services-list-section">
+        <div aria-label="section" class="services-list-section">
             <p><q>The future depends on what you do today</q><span> ~ Mahatma Gandhi</span></p>
-            <div class="services-list">
-                <div class="service selected">
-                    <p class="head">Front-end Development</p>
-                    <p class="body"><img src="./icons/icons8-front-end-64.png" alt="Front-end">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+            <div aria-label="service list" class="services-list">
+                <div aria-label="service item" class="service selected">
+                    <div class="head">
+                        <h3>Front-end Development</h3>
+                        <a href="">See More</a>
+                    </div>
+                    <p class="body"><img src="./icons/icons8-front-end-64.png" alt="Front-end">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
                 </div>
-                <div class="service">
-                    <p class="head">Back-end Development</p>
-                    <p class="body"><img src="./icons/icons8-backend-48.png" alt="Back-end">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+                <div aria-label="service item" class="service">
+                    <div class="head">
+                        <h3>Back-end Development</h3>
+                        <a href="">See More</a>
+                    </div>
+                    <p class="body"><img src="./icons/icons8-backend-48.png" alt="Back-end">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
                 </div>
-                <div class="service">
-                    <p class="head">DevOps</p>
-                    <p class="body"><img src="./icons/icons8-devops-60.png" alt="DevOps">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+                <div aria-label="service item" class="service">
+                    <div class="head">
+                        <h3>DevOps</h3>
+                        <a href="">See More</a>
+                    </div>
+                    <p class="body"><img src="./icons/icons8-devops-60.png" alt="DevOps">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
                 </div>
-                <button type="button">View More</button>
-            </div>
-            <div class="service-article">
-
+                <button type="button">View All</button>
             </div>
         </div>
-        <div class="service-summary-section">
+        <div aria-label="article" class="service-summary-section">
             <h1 id="service-head">My Awesome <span>Services</span></h1>
             <p id="service-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                 
@@ -100,38 +107,44 @@
             <button type="button">Hire Me</button>
         </div>
 
-        <div class="testimonials-section">
+        <div aria-label="section" class="testimonials-section">
             <h1 id="testimonial-head">Clients Get <span>Exceptional Work</span> from Me</h1>
             <p id="testimonial-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
-            <img src="./images/Smiling Lady.png" alt="Satisfied Client" >
-            <div id="quote-background">
+            <img src="./images/Smiling Lady.png" alt="Client smiling with satisfaction" >
+            <div aria-label="section" id="quote-background">
                 <p><q>Muyiwa always under-promises but over-delivers</q> ~ Chairman, Ekiti State Internal Revenue Service (2022 - 2026)</p>
             </div>
         </div>
-        <div class="projects-section">
+        <div aria-label="section" class="projects-section">
             <h1>Recent <span>Projects</span></h1>
-            <img src="./images/Project-1.png" alt="Project" >
-            <h3 id="project-head">Project Name</h3>
+            <img src="./images/Project-1.png" alt="One of the projects undertaken" >
+            <div id="project-head">
+                <h3>Project Name</h3>
+                <a href="">See More</a>
+            </div>
             <p id="project-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
             <p id="project-skills">HTML5, SCSS, JS, WP</p>
-            <button type="button">View More</button>
+            <button type="button">View All</button>
         </div>
 
-        <div class="News-section">
+        <div aria-label="section article" class="News-section">
             <h1>Developers' <span>News</span></h1>
             <img src="./images/News image.png" alt="News">
-            <p id="news-source">GlobeNewswire</p>
-            <p id="news-date">Published 24 Sep. 2024</p>
+            <p id="news-source">GlobeNewswire</p>            
+            <div id="news-date">
+                <p>Published 24 Sep. 2024</p>
+                <a href="">See More</a>
+            </div>
             <h3 id="news-head">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</h3>
             <p id="news-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
-            <a href=""><button type="button">View More</button></a>
+            <a href=""><button type="button">View All</button></a>
         </div>
 
-        <div class="contact-section">
-            <h1>Ready to <span>talk</span> Business</h1>
-            <img src="./images/Archer.png" alt="Archer with arrow">
+        <div aria-label="section" class="contact-section">
+            <h1>Ready to <span>talk</span> Business?</h1>
+            <img src="./images/Archer.png" alt="Archer with a focused arrow" role="img">
             <p>Shoot your message</p>
-            <button id="secondary" type="button">Call Me</button>
+            <p id="secondary">Call Me</p>
             <button id="primary" type="button">Email Me</button>
         </div>
     </main>

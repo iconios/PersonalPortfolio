@@ -1,4 +1,4 @@
 node_modules
 .env
-styles.scss
+*.scss
 styles.css.map
