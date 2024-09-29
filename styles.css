@@ -664,10 +664,13 @@ body footer .fine-letters_container li {
   body main .services-list-section .services-list .service {
     padding-bottom: 10px;
   }
-  body main .services-list-section .services-list .service .head {
-    padding: 15px 0 0 15px;
-    font-weight: 600;
+  body main .services-list-section .services-list .service .head h3 {
+    display: inline;
     font-size: 4vw;
+  }
+  body main .services-list-section .services-list .service .head a {
+    right: 40px;
+    font-size: 3vw;
   }
   body main .services-list-section .services-list .service .body {
     padding: 10px;
@@ -720,14 +723,20 @@ body footer .fine-letters_container li {
   body main .testimonials-section #quote-background p {
     font-size: 4vw;
   }
+  body main .projects-section {
+    padding: 40px 15px;
+  }
   body main .projects-section h1 {
     font-size: 8vw;
   }
   body main .projects-section img {
     width: calc(100% - 20px);
   }
-  body main .projects-section h3 {
+  body main .projects-section #project-head h3 {
     font-size: 4vw;
+  }
+  body main .projects-section #project-head a {
+    font-size: 3vw;
   }
   body main .projects-section #project-desc {
     font-size: 3.5vw;
@@ -736,6 +745,14 @@ body footer .fine-letters_container li {
     font-size: 3.5vw;
   }
   body main .projects-section button {
+    background-color: #F25C05;
+    padding: 10px 25px;
+    border-radius: 20px;
+    border-color: none;
+    border-style: none;
+    width: 80%;
+    color: #FFFFFF;
+    font-size: 18px;
     font-size: 3.5vw;
   }
   body main .News-section {
@@ -747,9 +764,27 @@ body footer .fine-letters_container li {
   body main .News-section img {
     width: calc(100% - 20px);
   }
-  body main .News-section #news-source, body main .News-section #news-date {
+  body main .News-section #news-source {
     font-size: 2.5vw;
     margin-bottom: 2px;
+  }
+  body main .News-section #news-date {
+    margin: 0;
+    color: #0D0D0D;
+    text-align: left;
+  }
+  body main .News-section #news-date p {
+    display: inline;
+    font-size: 2.5vw;
+  }
+  body main .News-section #news-date a {
+    display: inline;
+    text-underline-offset: 2px;
+    color: #F25C05;
+    font-weight: 600;
+    position: absolute;
+    right: 30px;
+    font-size: 2.5vw;
   }
   body main .News-section #news-head {
     font-size: 4vw;
@@ -773,16 +808,9 @@ body footer .fine-letters_container li {
     font-size: 3.5vw;
     text-align: center;
   }
-  body main .contact-section button#secondary {
-    background-color: #FFFFFF;
-    padding: 10px 25px;
-    border-radius: 20px;
-    border-color: #F25C05;
-    border-style: solid;
-    width: 80%;
-    color: #0D0D0D;
-    font-size: 18px;
+  body main .contact-section p#secondary {
     margin-bottom: 10px;
+    font-size: 3.5vw;
   }
   body main .contact-section button#primary {
     background-color: #F25C05;
@@ -793,6 +821,7 @@ body footer .fine-letters_container li {
     width: 80%;
     color: #FFFFFF;
     font-size: 18px;
+    font-size: 3.5vw;
   }
   body footer h5 {
     font-size: 2.5vw;
